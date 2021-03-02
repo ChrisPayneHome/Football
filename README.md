@@ -1,12 +1,4 @@
 # Football
-Football projects
-
-
-############################################################
-
-Notes for data pipline and Premier league prediction project
-
-############################################################
 
 Data Pipline:
 
