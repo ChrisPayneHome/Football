@@ -10,7 +10,7 @@ while True:
 	preurl = 'https://www.football-data.co.uk/mmz4281/'
 
 	def read_csv(url, filename):
-		path = '/Users/christian/Kaggle/Sports Analytics/Football/Game Data/' + filename + '.csv'
+		path = 'Path to chosen directory' + filename + '.csv'
 		data = pd.read_csv(urllib.request.urlopen(url), error_bad_lines = False)
 		data = data[['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HTHG', 'HTAG', 'HTR', 'HS', 'AS', 'HST', 'AST', 'HC', 'AC', 'HF', 'AF', 'HY', 'AY', 'HR', 'AR']]
 		data.to_csv(path, header = True, index = False)
