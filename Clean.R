@@ -3,7 +3,7 @@ library(readr)
 library(dplyr)
 library(rjson)
 
-path <- "/Users/christian/Kaggle/Sports Analytics/Football/"
+path <- #chosen path
 years <- c('21', '20', '19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '09', '08', '07', '06', '05', '04', '03', '02', '01', '00')
 game_files <- list.files(path = paste(path, "Game Data", sep = ""))
 
@@ -77,7 +77,7 @@ for(i in 22:2){
 
 	season_data <- season_data[order(season_data$Pos),]
 
-	season_path <-  "/Users/christian/Kaggle/Sports Analytics/Football/Prem Season Table Data"
+	season_path <-  #chosen path
 	filename <- paste(season_path, "/", years[i], years[i-1],".csv", sep = "")
 	write.csv(season_data, filename)
 }
